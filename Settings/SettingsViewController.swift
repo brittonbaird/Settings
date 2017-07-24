@@ -17,12 +17,29 @@ class SettingsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath) as? SettingTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingCell", for: indexPath) as? SettingTableViewCell
         let setting = SettingsController.shared.setting(at: indexPath)
         cell?.updateViews(with: setting)
+        cell?.delegate = self
         
         return cell ?? UITableViewCell()
     }
 
     
+}
+
+// MARK: - SettingTableViewCell delegate
+
+extension SettingsViewController: SettingTableViewCellDelegate {
+    
+    func settingValueChanged(_ cell: SettingTableViewCell, selected: Bool) {
+        // change isSet on setting
+        // Which setting to change?
+        guard let cellIndexPath = tableView.indexPath(for: cell) else { return }
+        let setting = SettingsController.shared.setting(at: cellIndexPath)
+        tableView.beginUpdates()
+        setting.isSet = selected
+        tableView.reloadRows(at: [cellIndexPath], with: .automatic)
+        tableView.endUpdates()
+    }
 }
