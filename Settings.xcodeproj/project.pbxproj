@@ -13,6 +13,8 @@
 		28C0F6EC1F264F2100BF9049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C0F6EA1F264F2100BF9049 /* LaunchScreen.storyboard */; };
 		28C0F6F71F26611300BF9049 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0F6F61F26611300BF9049 /* Setting.swift */; };
 		28C0F6F91F26625100BF9049 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0F6F81F26625100BF9049 /* SettingsController.swift */; };
+		28C0F6FC1F26687600BF9049 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0F6FB1F26687600BF9049 /* SettingsViewController.swift */; };
+		28C0F6FE1F266BF400BF9049 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0F6FD1F266BF400BF9049 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		28C0F6ED1F264F2100BF9049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28C0F6F61F26611300BF9049 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		28C0F6F81F26625100BF9049 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		28C0F6FB1F26687600BF9049 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28C0F6FD1F266BF400BF9049 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		28C0F6F41F264F4B00BF9049 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				28C0F6FD1F266BF400BF9049 /* SettingTableViewCell.swift */,
+				28C0F6FB1F26687600BF9049 /* SettingsViewController.swift */,
 				28C0F6E51F264F2100BF9049 /* Main.storyboard */,
 			);
 			name = UI;
@@ -171,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28C0F6FC1F26687600BF9049 /* SettingsViewController.swift in Sources */,
+				28C0F6FE1F266BF400BF9049 /* SettingTableViewCell.swift in Sources */,
 				28C0F6F91F26625100BF9049 /* SettingsController.swift in Sources */,
 				28C0F6F71F26611300BF9049 /* Setting.swift in Sources */,
 				28C0F6E21F264F2100BF9049 /* AppDelegate.swift in Sources */,
